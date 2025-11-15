@@ -1,0 +1,44 @@
+---
+
+import HeaderLink from './HeaderLink.astro'
+---
+
+<header class='header'>
+	<nav>
+    <img src="/public/icons/RuStore_Color_Logo.svg" alt="RuStore логотип" class="logo">
+		<div class="internal-links">
+			<HeaderLink href="/blog">Blog</HeaderLink>
+		</div>
+			<a href="https://m.webtoo.ls/@astro" target="_blank">
+        <img src="/public/icons/user.svg" alt="RuStore логотип" class='icon'>
+			</a>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 0 1em;
+		background: white;
+		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    height: 100px;
+	}
+	h2 {
+		margin: 0;
+		font-size: 1em;
+	}
+	nav {
+		display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    justify-items: center;
+	}
+	nav a {
+		color: var(--black);
+		border-bottom: 4px solid transparent;
+	}
+	nav a.active {
+		border-bottom-color: var(--accent);
+	}
+</style>
