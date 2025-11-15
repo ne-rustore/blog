@@ -1,0 +1,35 @@
+.header {
+  margin: 0;
+  padding: 0 1em;
+  background: white;
+  box-shadow: 0 2px 8px rgba(var(--black), 5%);
+  height: 100px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.header nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  justify-items: center;
+}
+
+/* Объединяем все стили для <a> */
+.header nav a {
+  display: inline-block;
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+.header nav a.active {
+  font-weight: bolder;
+  text-decoration: underline;
+  border-bottom-color: var(--accent);
+}
