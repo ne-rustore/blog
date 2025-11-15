@@ -60,6 +60,7 @@ b {
 }
 a {
   color: var(--accent);
+  text-decoration: none;
 }
 a:hover {
   color: var(--accent);
@@ -83,7 +84,6 @@ table {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 code {
   padding: 2px 5px;
@@ -128,4 +128,12 @@ hr {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+.logo {
+  height: 100px;
+}
+
+.icon {
+  height: 30px;
 }
